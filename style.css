@@ -1,0 +1,162 @@
+/* parent container needs to have display set as flex */
+/* justify-content aligns items along the main (primary) axis */
+/* align-items aligns items along the cross (secondary axis, this can move the elements up and down in its container */
+/* flex-wrap:wrap allows items to maintain their size and pushes the item to the "second line" in the container. After using this we typically use align-content for item placement */
+/* SIZING THE ITMES IN THE FLEXBOX ONLY (not used for the actual flexbox) are flex-basis, flex-grow, flex-shrink, and flex */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(245, 230, 216, 0.86);
+}
+/* set margin to put space in between links */
+a {
+  margin: 2rem;
+  margin-top: 0.5rem;
+  font-family: avenir;
+}
+.hero-image {
+  display: flex;
+  background-image: url(images/mountains.jpeg);
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+}
+.container {
+  display: flex;
+}
+.profile-photo {
+  display: flex;
+  justify-content: right;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.hello {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 200px;
+  font-size: 40px;
+  font-family: "Poiret One", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+#about-me-title {
+  display: flex;
+  justify-content: center;
+  background-color: lightgrey;
+  margin: 0;
+  height: 50px;
+  font-family: "Poiret One", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+}
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: lightgrey;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 0;
+  padding-bottom: 2rem;
+  font-family: avenir;
+  color: #333;
+}
+.portfolio-title {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  font-family: "Poiret One", sans-serif;
+  font-family: "Raleway", sans-serif;
+  background-color: rgba(127, 194, 211, 0.02);
+  font-size: 25px;
+}
+.about-me-section {
+  background-color: lightgrey;
+  padding-top: 1rem;
+}
+#portfolio {
+  background-color: rgba(127, 194, 211, 0.40);
+}
+.portfolio-section {
+  /* background-color: rgba(127 194 211 0.29); */
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gitfit {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  margin: 1rem;
+  border: 6px solid lightgray;
+}
+.planner {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  margin: 1rem;
+  border: 6px solid lightgray;
+}
+
+h1 {
+  display: inline-block;
+}
+h2 {
+  text-align: center;
+  margin: 0;
+}
+.backtotop {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(127, 194, 211, 0.02);
+  margin: 0;
+  padding-bottom: 5rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: lightgray;
+  color: #333;
+  padding-bottom: 1rem;
+}
+#contact {
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+  padding-bottom: 1rem;
+  height: 30px;
+  padding-top: 0.5rem;
+  font-family: "Poiret One", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
+.email {
+  margin-left: 1rem;
+}
+.creditCopyText {
+  display: none;
+}
+footer {
+  font-family: avenir;
+}
+/* @media screen and (max-width: 967px) {
+  #portfolio {
+    display: block;
+    justify-content: center;
+  }
+} */
